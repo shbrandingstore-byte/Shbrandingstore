@@ -740,8 +740,8 @@ var CONFIG = {
   /* Google Sheet orders: paste your Google Apps Script "Web app URL" here (it ends in /exec).
      Every order and contact-form enquiry is then added to your Google Sheet automatically.
      sheetKey must match SECRET_KEY in your Apps Script (any word you choose). */
-  sheetEndpoint: "",
-  sheetKey: "",
+  sheetEndpoint: "https://script.google.com/macros/s/AKfycbyugl6K7uyIUcYWawlR0blZA9Wu7HHxz7m0vnEq2mUbLv3tULSWVgzwLL5BtOtpi3q8fg/exec",
+  sheetKey: "SH",
 
   emirates: ["Abu Dhabi","Dubai","Sharjah","Ajman","Umm Al Quwain","Ras Al Khaimah","Fujairah"],
 
@@ -1435,9 +1435,9 @@ var toastT;
 function toast(html){var t=$("#toast");t.innerHTML=html;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove("show")},4500)}
 
 /* ---------- Google Sheet sending ---------- */
-function sheetOn(){return /^https:\/\/script\.google\.com\/macros\/s\/[^\s]+\/exec$/.test(CONFIG.sheetEndpoint||"")}
+function sheetOn(){return /^https:\/\/script\.google\.com\/macros\/s\/[^\s]+\/exec$/.test(CONFIG.sheetEndpoint||"https://script.google.com/macros/s/AKfycbyugl6K7uyIUcYWawlR0blZA9Wu7HHxz7m0vnEq2mUbLv3tULSWVgzwLL5BtOtpi3q8fg/exec")}
 function postSheet(payload){
-  payload.key=CONFIG.sheetKey||"";
+  payload.key=CONFIG.sheetKey||"SH";
   var ctl=("AbortController" in window)?new AbortController():null,timer;
   var req=fetch(CONFIG.sheetEndpoint,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload),keepalive:true,signal:ctl?ctl.signal:undefined}).then(function(){return true});
   var to=new Promise(function(res,rej){timer=setTimeout(function(){if(ctl)ctl.abort();rej(new Error("timeout"))},15000)});

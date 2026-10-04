@@ -587,7 +587,7 @@ main{padding-top:98px!important}
   .menu{top:80px!important}
   main{padding-top:80px!important}
 }
-<style>
+
 /* ===== Reviews section ===== */
 .reviews{background:var(--ivory);padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--beige)}
 .reviews .wrap{width:min(1100px,100% - 48px)}
@@ -607,8 +607,7 @@ main{padding-top:98px!important}
 .rv-by em{font-style:normal;color:var(--champagne);font-size:11.5px;letter-spacing:.06em}
 .rv-cta{text-align:center;margin-top:36px}
 @media(max-width:900px){.rv-grid{grid-template-columns:1fr}}
-</style>
-<style>
+
 /* ===== Announcement bar + Hiba hero ===== */
 :root{--bar-h:40px;--nav-h:calc(98px + var(--bar-h))}
 .announce{height:var(--bar-h);display:flex;align-items:center;justify-content:center;gap:18px;padding:0 10px;background:#8FA998;color:#fff;font-family:var(--sans);font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-align:center}
@@ -813,11 +812,13 @@ var CATEGORIES = {
       { key:"bracelets",   label:"Bracelet" },
       { key:"earrings",    label:"Earrings" },
       { key:"anklets",     label:"Anklets" },
-      { key:"Combo set",     label:"Combo set" },
       { key:"watches",     label:"Watches" },
       { key:"traditional-collection", label:"Traditional Collection" },
       { key:"kids",        label:"Kids" },
-      { key:"mens",        label:"Mens" }
+      { key:"nose-pins",   label:"Nose Pins" },
+      { key:"hand-chains", label:"Hand Chains" },
+      { key:"mens",        label:"Mens" },
+      { key:"combo-set",   label:"Combo Set" }
     ]
   },
   clothing: {
@@ -874,12 +875,12 @@ addProducts({
   category:"jewellery", subcategory:"rings",
   folder:"images/jewellery/rings/",
   price:12, stock:1,
-  sizes:["5","6","7","8","9"],
+  sizes:["15","16","17","18"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","Crystal detail","Available in ring sizes 5-9"]
+  details:["Gold plated,Anti tarnish and stainless steel"," Ring sizes are adjustable"]
 }, [
-  ["Petal Crystal Ring", "petal-crystal-ring.jpg"],
+  ["Petal Crystal Ring", "petal-crystal-ring.jpg", { desc: "Your own description sentence." }],
   ["Crown Solitaire Ring", "crown-solitaire-ring.jpg"],
   ["Twisted Loop Crystal Ring", "twisted-loop-crystal-ring.jpg"],
   ["Shooting Star Crystal Ring", "shooting-star-crystal-ring.jpg"],
@@ -1064,7 +1065,7 @@ addProducts({
   category:"clothing", subcategory:"3-pcs-sets",
   folder:"images/clothing/traditional-wear/",
   price:69, stock:4,
-  sizes:["S","M","L","XL","XXL"], pos:"50% 40%",
+  sizes:["M","L","XL","XXL"], pos:"50% 40%",
   style:"",
   note:"A comfortable, easy fit for everyday and occasion wear.",
   details:["Traditional print","Matching set","Available in five sizes"]
@@ -1086,12 +1087,12 @@ addProducts({
   details:["Traditional print","Matching set","Available in five sizes"]
 }, [
   ["Mustard Motif Kurta", "mustard-motif-kurta.jpeg"],
-  [//"Navy Motif Kurta", "navy-motif-kurta.jpeg"],
+  //["Navy Motif Kurta", "navy-motif-kurta.jpeg"],
   ["Maroon Motif Kurta", "maroon-motif-kurta.jpeg"],
   ["Mustard Motif Kurta Detail", "mustard-motif-kurta-detail.jpeg"],
   ["Green Motif Kurta", "green-motif-kurta.jpeg"],
   ["Red Motif Kurta", "red-motif-kurta.jpeg"],
-  ["Green Motif Kurta Detail", "green-motif-kurta-detail.jpeg"]
+  ["Green Motif Kurta Detail", "green-motif-kurta-detail.jpeg"] 
 ]);
 
 /* ---------- BANGLES – 390 AED (22 pieces) ---------- */
@@ -1230,7 +1231,7 @@ addProducts({
   category:"jewellery", subcategory:"mens",
   folder:"images/jewellery/mens/",
   price:10, stock:2,
-  sizes:["8","9","10","11","12"], pos:"50% 50%",
+  sizes:["17","18","19","20","21"], pos:"50% 50%",
   style:"",
   note:"Comes in a SH Branding Store gift pouch.",
   details:["Black and silver finish","Available in ring sizes 8-12","SH Branding Store gift pouch"]
@@ -1312,7 +1313,7 @@ addProducts({
 
 /* ---------- Combo set – 390 AED (12 pieces) ---------- */
 addProducts({
-  category:"jewellery", subcategory:"Combo set",
+  category:"jewellery", subcategory:"combo-set",
   folder:"images/jewellery/Combo set/",
   price:35, stock:1,
   sizes:["One Size"],
@@ -1322,8 +1323,8 @@ addProducts({
 }, [
   ["Green Oval Chain and Earrings set", "Green Oval Chain and earring set.jpg"],
   ["lavender white tulip chain and earring set", "lavender white tulip chain and earring set.jpg"],
-  ["Rolex pink round chain and earring set ", "pink round chain and earring set .jpg"],
-  ["Rolex pink round chain and earring set ", "pink round chain and earring set .jpg"],
+  ["pink round chain and earring set ", "pink round chain and earring set .jpg"],
+  ["White Tulip Chain and Earring Set", "white tulip chain and earring set .jpg"],
   ]);
 
 
@@ -1341,6 +1342,20 @@ addProducts({
   ["Gucci Round Green Dial", "2.jpg"],
   ["Rolex white Stone Square Dail", "3.jpg"],
   ["Rolex White Square Dail", "4.jpg"],
+  ]);
+
+/* ---------- Plus Size – 390 AED (12 pieces) ---------- */
+addProducts({
+  category:"jewellery", subcategory:"plus-size",
+  folder:"images/jewellery/plus-size/",
+  price:45, stock:1,
+  sizes:["4XL","5XL","6XL","7XL"],
+  style:"gold-tone",
+  note:"Comes in a SH Branding Store gift pouch.",
+  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+}, [
+// ["add plus size here and create a images folder under jewellery/plus-size/and add the images over there, "1.jpg"],
+
   ]);
 
 /* =====================================================================

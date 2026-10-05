@@ -849,7 +849,7 @@ var CATEGORIES = {
           ["Gold Hoops", "gold-hoops.jpg", { price:350, stock:2 }],
    You can use:  price, stock, sizes, pos, desc, gallery, id
           stock:0           → shows "Sold out" automatically
-          sizes:["S","M"]   → only these sizes are offered
+          sizes:["S","M","L","XL","XXL","XXXL"]   → only these sizes are offered
           desc:"Your own description sentence."
           pos:"50% 30%"     → which part of the photo is centred (x% y%)
           gallery:["a.jpg","b.jpg"]  → extra photos on the product page
@@ -878,15 +878,15 @@ addProducts({
   sizes:["15","16","17","18","Adjustable"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold plated,Anti tarnish and stainless steel"," Ring sizes are adjustable"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel"," Ring sizes are adjustable"]
 }, [
-  ["Petal Crystal Ring", "petal-crystal-ring.jpg", { desc: "Your own description sentence." }],
-  ["Crown Solitaire Ring", "crown-solitaire-ring.jpg", { price: 13}],
-  ["Twisted Loop Crystal Ring", "twisted-loop-crystal-ring.jpg"],
-  ["Shooting Star Crystal Ring", "shooting-star-crystal-ring.jpg"],
-  ["Wave Crystal Ring", "wave-crystal-ring.jpg"],
-  ["Baguette Solitaire Ring", "baguette-solitaire-ring.jpg"],
-  ["Butterfly Crystal Ring", "butterfly-crystal-ring.jpg"],
+  ["Petal Crystal Ring", "petal-crystal-ring.jpg", { price: 12}],
+  ["Crown Solitaire Ring", "crown-solitaire-ring.jpg", { price: 12}],
+  ["Twisted Loop Crystal Ring", "twisted-loop-crystal-ring.jpg", { price: 12}],
+  ["Shooting Star Crystal Ring", "shooting-star-crystal-ring.jpg", { price: 12}],
+  ["Wave Crystal Ring", "wave-crystal-ring.jpg",{price:12}],
+  ["Baguette Solitaire Ring", "baguette-solitaire-ring.jpg",{ price:12}],
+  ["Butterfly Crystal Ring", "butterfly-crystal-ring.jpg",{price:12}],
   ["Star Crystal Stack Ring", "star-crystal-stack-ring.jpg"],
   ["Heart Crystal Ring", "heart-crystal-ring.jpg"],
   ["Flower Solitaire Ring", "flower-solitaire-ring.jpg"],
@@ -909,12 +909,14 @@ addProducts({
   ["White Square Beaded Ring", "white-square-beaded-ring.jpg"],
   ["Star Orange Baguette Double Ring", "star-orange-baguette-double-ring.jpg"],
   ["Star Pearl Double Band Ring", "star-pearl-double-band-ring.jpg"],
-  ["Wavy Gold Statement Ring", "wavy-gold-statement-ring.jpg"],
-  ["Oval Link Gold Ring", "oval-link-gold-ring.jpg"],
+  ["Wavy Gold Statement Ring", "wavy-gold-statement-ring.jpg", { price: 10 }],
+  ["Oval Link Gold Ring", "oval-link-gold-ring.jpg", { price: 10 }],
   ["Crystal Bow Band Ring", "crystal-bow-band-ring.jpg"],
-  ["Layered Swirl Gold Ring", "layered-swirl-gold-ring.jpg"],
-  ["Hammered Dot Wide Ring", "hammered-dot-wide-ring.jpg"],
-  ["Molten Wave Gold Ring", "molten-wave-gold-ring.jpg"],
+  ["Layered Swirl Gold Ring", "layered-swirl-gold-ring.jpg", { price: 10 }],
+  ["Hammered Dot Wide Ring", "hammered-dot-wide-ring.jpg", { price: 10 }],
+  ["Molten Wave Gold Ring", "molten-wave-gold-ring.jpg", { price: 10 }],
+  ["Open Leaf Gold Ring", "open-leaf-gold-ring.jpg"],
+  ["Ribbon Bow Gold Ring", "ribbon-bow-gold-ring.jpg"],
   ["Crystal Flower Crown Ring", "crystal-flower-crown-ring.jpg"],
   ["Crystal Leaf Band Ring", "crystal-leaf-band-ring.jpg"],
   ["Black Round Engraved Ring", "black-round-engraved-ring.jpg"],
@@ -930,22 +932,22 @@ addProducts({
   ["Pink Heart Solitaire Ring", "pink-heart-solitaire-ring.jpg"],
   ["Lilac Heart Wrap Ring", "lilac-heart-wrap-ring.jpg"],
   ["Garnet Round Solitaire Ring", "garnet-round-solitaire-ring.jpg"],
-  ["Teardrop Gold Wrap Ring", "teardrop-gold-wrap-ring.jpg"],
-  ["Laurel Leaf Gold Ring", "laurel-leaf-gold-ring.jpg"],
-  ["Triple Bead Gold Ring", "triple-bead-gold-ring.jpg"],
-  ["Open Leaf Gold Ring", "open-leaf-gold-ring.jpg"],
+  ["Teardrop Gold Wrap Ring", "teardrop-gold-wrap-ring.jpg", { price: 10}],
+  ["Laurel Leaf Gold Ring", "laurel-leaf-gold-ring.jpg", { price: 10}],
+  ["Triple Bead Gold Ring", "triple-bead-gold-ring.jpg", { price: 10}],
+  ["Open Leaf Gold Ring", "open-leaf-gold-ring.jpg", { price: 10}],
   ["Pink Emerald Cut Ring", "pink-emerald-cut-ring.jpg"],
-  ["Heart Bow Gold Ring", "heart-bow-gold-ring.jpg"],
+  ["Heart Bow Gold Ring", "heart-bow-gold-ring.jpg", { price: 10}],
   ["Open Flower Gold Ring", "open-flower-gold-ring.jpg"],
-  ["Ribbon Bow Gold Ring", "ribbon-bow-gold-ring.jpg"],
-  ["Heart Link Crystal Ring", "heart-link-crystal-ring.jpg"],
-  ["Open Heart Gold Ring", "open-heart-gold-ring.jpg"],
-  ["Rose Cutout Gold Ring", "rose-cutout-gold-ring.jpg"],
-  ["Black Round Onyx Ring", "black-round-onyx-ring.jpg"],
-  ["Black Clover Onyx Ring", "black-clover-onyx-ring.jpg"],
-  ["Black Star Onyx Ring", "black-star-onyx-ring.jpg"],
-  ["Black Square Onyx Ring", "black-square-onyx-ring.jpg"],
-  ["Black Triangle Onyx Ring", "black-triangle-onyx-ring.jpg"]
+  ["Ribbon Bow Gold Ring", "ribbon-bow-gold-ring.jpg", { price: 10}],
+  ["Heart Link Crystal Ring", "heart-link-crystal-ring.jpg", { price: 10,Sizes:["17","18","19"]}],
+  ["Open Heart Gold Ring", "open-heart-gold-ring.jpg", { price: 10,Sizes:["17","18","19"]}],
+  ["Rose Cutout Gold Ring", "rose-cutout-gold-ring.jpg", { price: 10,Sizes:["17","18","19"]}],
+  ["Black Round Onyx Ring", "black-round-onyx-ring.jpg", { price: 10,Sizes:["17","18"]}],
+  ["Black Clover Onyx Ring", "black-clover-onyx-ring.jpg", { price: 10,Sizes:["17","18"]}],
+  ["Black Star Onyx Ring", "black-star-onyx-ring.jpg", { price: 10,Sizes:["15","16","17","18"]}],
+  ["Black Square Onyx Ring", "black-square-onyx-ring.jpg", { price: 10,Sizes:["15","16","17","18"]}],
+  ["Black Triangle Onyx Ring", "black-triangle-onyx-ring.jpg", { price: 10,Sizes:["15","16","17","18"]}]
 ]);
 
 /* ---------- KIDS ANKLETS – 640 AED (6 pieces) ---------- */
@@ -956,14 +958,31 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Gold Beaded Anklet", "gold-beaded-anklet-on-feet.jpeg"],
   ["Black Bead Gold Anklet", "black-bead-gold-anklet-on-feet.jpeg"],
   ["Black Clover Charm Anklet", "black-clover-charm-anklet.jpeg"],
+  ["Heart Anklet", "Heart Anklet.jpg"],
   ["Gold Charms Anklet", "gold-charms-anklet.jpeg"],
   ["Gold Chain Anklet", "gold-chain-anklet-on-feet.jpeg"],
-  ["Butterfly Charm Anklet", "butterfly-charm-anklet-on-feet.jpeg"]
+  ["Butterfly Charm Anklet", "butterfly-charm-anklet-on-feet.jpeg"],
+  ["Tail-evil Necklace", "Tail-evil Necklace.jpg", { price: 25}],
+  ["Bow double layer chain", "Bow double layer chain.jpg", { price: 25}],
+  ["Bow Ring", "Bow Ring.jpg", { price: 10 }],
+  ["Butterfly Ring", "Butterfly Ring.jpg", { price: 10 }],
+  ["Clover Ring", "Clover Ring.jpg", { price: 10 }],
+  ["Crown Ring", "Crown Ring.jpg", { price: 10 }],
+  ["Flower Ring", "Flower Ring.jpg", { price: 10 }],
+  ["Heart Ring", "Heart Ring.jpg", { price: 10 }],
+  ["Leaf Ring", "Leaf Ring.jpg", { price: 10 }],
+  ["Little Crown Ring", "Little Crown Ring.jpg", { price: 10 }],
+  ["Butterfly Bangle-Ring Set", "Butterfly bangle- ring set.jpg"],
+  ["Flower Bangle-Ring Set", "Flower Bangle-ring set.jpg"],
+  ["Round Bangle-Ring Set", "Round bangle-ring set.jpg"],
+  ["sea-theme necklace", "sea-theme necklace.jpg", { price: 25}],
+  ["Strawberry double layer chain", "Strawberry double layer chain.jpg", { price: 25}],
+
 ]);
 
 /* ---------- traditional collection – 480 AED (2 pieces) ---------- */
@@ -988,12 +1007,12 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
-  ["Pearl Charm Gold Bangle", "pearl-charm-gold-bangle-01.jpeg"],
-  ["Blue Pearl Charm Bangle", "pearl-charm-gold-bangle-02.jpeg"],
-  ["Blue Bead Gold Bangle", "blue-bead-gold-bangle.jpeg"],
-  ["Blue Floral Charm Bangle", "blue-floral-charm-bangle.jpeg"]
+  //["Pearl Charm Gold Bangle", "pearl-charm-gold-bangle-01.jpeg"],
+  ["Blue Pearl Charm Bangle", "pearl-charm-gold-bangle-02.jpeg", { price: 28}],
+  ["Blue Bead Gold Bangle", "blue-bead-gold-bangle.jpeg", { price: 28}],
+  ["Blue Floral Charm Bangle", "blue-floral-charm-bangle.jpeg", { price: 28}]
 ]);
 
 /* ---------- EARRINGS – 320 AED (31 pieces) ---------- */
@@ -1004,7 +1023,7 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Crystal Drop Earrings", "crystal-drop-earrings.jpeg"],
   ["Gold Heart Stud Earrings", "gold-heart-stud-earrings.jpeg"],
@@ -1044,26 +1063,43 @@ addProducts({
 addProducts({
   category:"clothing", subcategory:"3-pcs-sets",
   folder:"images/clothing/3-pcs-sets/",
-  price:69, stock:4,
-  sizes:["M","L","XL","XXL"], pos:"50% 40%",
+  price:69, stock:1,
+  sizes:["M","L","XL","XXL","XXXL"], pos:"50% 40%",
   style:"",
   note:"A comfortable, easy fit for everyday and occasion wear.",
   details:["Traditional print","Matching set","Available in five sizes"]
 }, [
-  
+  ["Blue and Rose Printed Cotton 3 Pcs Set", "Blue and rose printed cotton 3 pcs set.jpg", { sizes: ["L"], price: 59 }],
+  ["blue printed cotton 3 pcs set", "Blue printed cotton 3 pcs set.jpg", { sizes: ["L"], price: 59 }],
+  ["orange printed cotton 3pcs set", "Orange printed cotton 3pcs set.jpg", { sizes: ["L"], price: 59 }],
+  ["Red printed cotton 3 pcs set", "Red printed cotton 3 pcs set.jpg", { sizes: ["L"], price: 59 }],
+  ["floral white soft 3pcs set", "Floral white soft 3pcs set.jpg", { sizes: ["L","M","XXL"], price: 69 }],
+  ["Red muslin 3pcs set", "Red muslin 3pcs set.jpg", { sizes: ["XXL"], price: 69 }],
+  ["Mango yellow muslin 3pcs set", "Mango yellow muslin 3pcs set.jpg", { sizes: ["XXL"], price: 69 }],
+  ["Light Green muslin 3pcs set", "Light Green muslin 3pcs set.jpg", { sizes: ["XXL"], price: 69 }],
+  ["Green muslin 3pcs set", "Green muslin 3pcs set.jpg", { sizes: ["XXL"], price: 69 }],
+  ["Blue muslin 3pcs set", "Blue muslin 3pcs set.jpg", { sizes: ["XXL"], price: 69 }]
+
 ]);
 
-/* ---------- KURTA – 280 AED (7 pieces) ---------- */
+/* ---------- KURTA – 280 AED (7 pieces) ---------- */ 
 addProducts({
   category:"clothing", subcategory:"kurta",
   folder:"images/clothing/kurta/",
   price:30, stock:1,
-  sizes:["S","M","L","XL","XXL"], pos:"50% 45%",
+  sizes:["S","M","L","XL","XXL","XXXL"], pos:"50% 45%",
   style:"",
   note:"A comfortable, easy fit for everyday and occasion wear.",
-  details:["Traditional print","Matching set","Available in five sizes"]
+  details:["Traditional print","Available in five sizes"]
 }, [
- 
+  ["Blue Printed Short Top", "Blue Printed Short Top.jpg", { sizes: [ "S"], price: 25 }],
+  ["Green Printed Kurti", "Green Printed Kurti.jpg", { sizes: ["XXXL"], price: 30 }],
+  ["Green V-Neck Kurti", "Green V-Neck Kurti.jpg", { sizes: ["XXXL"], price: 30 }],
+  ["Maroon Printed Kurti", "Maroon Printed Kurti.jpg", { sizes: ["XXXL"], price: 30 }],
+  ["Maroon V-Neck Kurti", "Maroon V-Neck Kurti.jpg", { sizes: ["XXXL"], price: 30 }],
+  ["Mustard Printed Kurti", "Mustard Printed Kurti.jpg", { sizes: ["XXXL"], price: 30 }],
+  ["Mustard V-Neck Kurti", "Mustard V-Neck Kurti.jpg", { sizes: ["XXXL"], price: 30 }]
+
 ]);
 
 
@@ -1071,13 +1107,17 @@ addProducts({
 addProducts({
   category:"clothing", subcategory:"cord-set",
   folder:"images/clothing/cord-set/",
-  price:30, stock:1,
-  sizes:["S","M","L","XL","XXL"], pos:"50% 45%",
+  price:49, stock:1,
+  sizes:["S","M","L","XL","XXL","XXXL"], pos:"50% 45%",
   style:"",
   note:"A comfortable, easy fit for everyday and occasion wear.",
   details:["Traditional print","Matching set","Available in five sizes"]
 }, [
- 
+  ["Black Cord Set", "Black-cordset.jpg",{ sizes: ["L","XL", "XXL"], price: 49 }],
+  ["Lavender Cord Set", "lavender-cordset.jpg", { sizes: ["L","XL", "XXL"], price: 49 }],
+  ["Red Printed Cord Set", "Red printed-cordset.jpg", { sizes: ["L","XL", "XXL"], price: 49 }],
+  ["Ivory Embroidered Cord Set", "Ivory Embroidered-cordset.jpg", { sizes: ["L","XL", "XXL"], price: 49 }]
+
 ]);
 
 
@@ -1085,11 +1125,11 @@ addProducts({
 addProducts({
   category:"jewellery", subcategory:"bangles",
   folder:"images/jewellery/bangles/",
-  price:390, stock:5,
+  price:25, stock:1,
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Golden Floral Filigree Bangle", "golden-floral-filigree-bangle.jpg"],
   ["Black Enamel Pave Bangle", "black-enamel-pave-bangle.jpg"],
@@ -1100,9 +1140,9 @@ addProducts({
   ["Ribbed Gold Cuff Bangle", "ribbed-gold-cuff-bangle.jpg"],
   ["Black Rectangle Charm Bangle", "black-rectangle-charm-bangle.jpg"],
   ["Emerald Crystal Bangle", "emerald-crystal-bangle.jpg"],
-  ["Rose Gold Square Crystal Bangle", "rose-gold-square-crystal-bangle.jpg"],
+  //["Rose Gold Square Crystal Bangle", "rose-gold-square-crystal-bangle.jpg"],
   ["Crystal Line Bangle", "crystal-line-bangle.jpg"],
-  ["Black and Pearl Clover Bangle", "black-and-pearl-clover-bangle.jpg"],
+  //["Black and Pearl Clover Bangle", "black-and-pearl-clover-bangle.jpg"],
   ["Crystal Clasp Bangle", "crystal-clasp-bangle.jpg"],
   ["Emerald Bar Bangle", "emerald-bar-bangle.jpg"],
   ["Triangle Crystal Bangle", "triangle-crystal-bangle.jpg"],
@@ -1113,48 +1153,52 @@ addProducts({
   ["Arrow Crystal Bangle", "arrow-crystal-bangle.jpg"],
   ["Triple Line Open Bangle", "triple-line-open-bangle.jpg"],
   ["Gold Floral Cuff Bangle", "gold-floral-cuff-bangle.jpg"]
+
 ]);
 
 /* ---------- BRACELETS – 280 AED (31 pieces) ---------- */
 addProducts({
   category:"jewellery", subcategory:"bracelets",
   folder:"images/jewellery/bracelets/",
-  price:25, stock:5,
+  price:20, stock:1,
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
-  ["Pearl Butterfly Bracelet", "pearl-butterfly-bracelet.jpg"],
-  ["Pearl Butterfly Bracelet", "pearl-butterfly-bracelet.jpg"],
-  ["Minimal Heart Bracelet", "minimal-heart-bracelet.jpg"],
-  ["Fine Gold Chain Bracelet", "fine-gold-chain-bracelet.jpg"],
-  ["Black Clover Bracelet", "black-clover-bracelet.jpg"],
+  ["Heart Watch Bracelet", "heart watch bracelet.jpg"],
+  ["Oval Mesh Watch Bracelet", "oval mesh watch bracelet.jpg"],
+  ["Oval Watch Bracelet", "Oval watch bracelet.jpg"],
+  ["Round Watch Bracelet", "Round watch bracelet.jpg"],
+  ["heart hanging bracelet", "heart hanging bracelet.jpg"],
+  ["Minimal Heart Bracelet", "minimal-heart-bracelet.jpg", { price: 15}],
+  ["Fine Gold Chain Bracelet", "fine-gold-chain-bracelet.jpg", { price:12}],
+  ["Black Clover Bracelet", "black-clover-bracelet.jpg", { price: 18}],
   ["Gold Bead Charm Bracelet", "gold-bead-charm-bracelet.jpg"],
-  ["Crystal Bow Bracelet", "crystal-bow-bracelet.jpg"],
-  ["Ruby Crystal Bracelet", "ruby-crystal-bracelet.jpg"],
-  ["Dangling Heart Bracelet", "dangling-heart-bracelet.jpg"],
-  ["Black Pearl Charm Bracelet", "black-pearl-charm-bracelet.jpg"],
-  ["Green Crystal Floral Bracelet", "green-crystal-floral-bracelet.jpg"],
-  ["Crystal Butterfly Bracelet", "crystal-butterfly-bracelet.jpg"],
-  ["Burgundy Crystal Bracelet", "burgundy-crystal-bracelet.jpg"],
-  ["Rainbow Crystal Bracelet", "rainbow-crystal-bracelet.jpg"],
-  ["Heart Outline Bracelet", "heart-outline-bracelet.jpg"],
-  ["Gold Charm Bracelet", "gold-charm-bracelet.jpg"],
-  ["Teardrop Charm Bracelet", "teardrop-charm-bracelet.jpg"],
-  ["Green Crystal Station Bracelet", "green-crystal-station-bracelet.jpg"],
-  ["Star Chain Bracelet", "star-chain-bracelet.jpg"],
-  ["Black Clover Station Bracelet", "black-clover-station-bracelet.jpg"],
+  ["Crystal Bow Bracelet", "crystal-bow-bracelet.jpg", { price: 15}],
+  ["black butterfly Crystal Bracelet", "black butterfly bracelet.jpg"],
+  ["Red Tennis Bracelet", "red tennis bracelet.jpg", { price: 18}], 
+  ["Black Pearl Charm Bracelet", "black-pearl-charm-bracelet.jpg", { price: 18}],
+  ["black butterfly bracelet", "black butterfly bracelet.jpg", { price: 15}],
+  ["Crystal Butterfly Bracelet", "white tulip.jpg"],
+  ["Burgundy Crystal Bracelet", "burgundy-crystal-bracelet.jpg", { price: 18}],
+  ["Red Tulip Bracelet", "red tulip bracelet.jpg"],
+  ["Lavender Pink Tulip", "Lavender Pink Tulip.jpg"],
+  ["Gold Charm Bracelet", "gold-charm-bracelet.jpg", { price: 15}],
+  ["Teardrop Charm Bracelet", "teardrop-charm-bracelet.jpg", { price: 15}],
+  ["Gold Crystal Station Bracelet", "Gold crystal-station-bracelet.jpg"],
+  ["Green Tulip Bracelet", "green tulip bracelet.jpg"],
+  ["Black Clover Station Bracelet", "black-clover-station-bracelet.jpg", { price: 18}],
   ["Crystal Charm Cluster Bracelet", "crystal-charm-cluster-bracelet.jpg"],
-  ["Black Circle Bracelet", "black-circle-bracelet.jpg"],
-  ["Crystal Flower Station Bracelet", "crystal-flower-station-bracelet.jpg"],
-  ["Mama Heart Bracelet", "mama-heart-bracelet.jpg"],
+  ["Black Circle Bracelet", "black-circle-bracelet.jpg", { price: 25}],
+  ["Crystal Flower Station Bracelet", "crystal-flower-station-bracelet.jpg", { price: 12}],
+  //["Mama Heart Bracelet", "mama-heart-bracelet.jpg"],
   ["Twisted Gold Bracelet", "twisted-gold-bracelet.jpg"],
   ["Crystal Station Bracelet", "crystal-station-bracelet.jpg"],
   ["Heart Drop Bracelet", "heart-drop-bracelet.jpg"],
   ["Heart Charm Bracelet", "heart-charm-bracelet.jpg"],
-  ["Green Stone Station Bracelet", "green-stone-station-bracelet.jpg"],
-  ["Multicolour Teardrop Bracelet", "multicolour-teardrop-bracelet.jpg"],
+  ["white Stone Station Bracelet", "white-stone-station-bracelet.jpg", { price: 20}],
+  ["Multicolour Teardrop Bracelet", "multicolour-teardrop-bracelet.jpg", { price: 15}],
   ["Gold Flower Bracelet", "gold-flower-bracelet.jpg"],
   ["Gold Flower Chain Bracelet", "gold-flower-chain-bracelet.jpg"]
 ]);
@@ -1170,19 +1214,26 @@ addProducts({
   details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Sapphire Bead Necklace", "sapphire-bead-necklace.jpg"],
-  ["White Tulip Necklace", "white tulip.jpg"],
-  ["Lavender Tulip Necklace", "lavender tulip.jpg"],
-  ["Pink Tulip Necklace", "pink-tulip.jpg"],
-  ["Red Tulip Necklace", "red-tulip.jpg"],
+  ["White Tulip Necklace", "white tulip.jpg", {  price:15, stock: 3 }],
+  ["Lavender Tulip Necklace", "lavender tulip.jpg", { price: 15 }],
+  ["Pink Tulip Necklace", "pink-tulip.jpg", { price: 15}],
+  ["Red Tulip Necklace", "red-tulip.jpg", { price:15, stock: 3 }],
+  ["Gold Heart Pendant Necklace", "gold-heart-pendant-necklace.jpg"],
+  ["Gold Bow Pendant Necklace", "gold-bow-pendant-necklace.jpg"],
+  ["Gold Flower Pendant Necklace", "gold-flower-pendant-necklace.jpg"],
+  ["Crystal Heart Pendant Necklace", "crystal-heart-pendant-necklace.jpg"],
+  ["Crystal Bar Pendant Necklace", "crystal-bar-pendant-necklace.jpg"],
+  ["Crystal Flower Pendant Necklace", "crystal-flower-pendant-necklace.jpg"],
+  ["Crystal Butterfly Pendant Necklace", "crystal-butterfly-pendant-necklace.jpg"],
   ["Tail Mangalsutra", "tail mangalsutra.jpg"],
   ["Single Stone Mangalsutra", "single stone mangalsutra.jpg"],
   ["Crystal Butterfly Pendant Necklace", "crystal-butterfly-pendant-necklace.jpg"],
   ["3 Layer Cherry Chain", "3 layer cherry chain.jpg"],
   ["Pearl Station Charm Necklace", "pearl-station-charm-necklace.jpg"],
   ["Gold Bead Station Necklace", "gold-bead-station-necklace.jpg"],
-  ["Gold Box Chain Necklace", "gold-box-chain-necklace.jpg"],
+  ["Gold Box Chain Necklace", "gold-box-chain-necklace.jpg", { price: 10 }],
   ["Gold Bow Pendant Necklace", "gold-bow-pendant-necklace.jpg"],
-  ["Gold Snake Chain Necklace", "gold-snake-chain-necklace.jpg"],
+  ["Gold Snake Chain Necklace", "gold-snake-chain-necklace.jpg", { price: 10 }],
   ["Crystal Initial A Necklace", "crystal-initial-a-necklace.jpg"],
   ["Multicolour Charm Necklace", "multicolour-charm-necklace.jpg"],
   ["Gold Letter Charm Necklace", "gold-letter-charm-necklace.jpg"],
@@ -1207,11 +1258,12 @@ addProducts({
   ["Gold Bow Necklace", "gold-bow-necklace.jpg"],
   ["Black Tassel Pendant Necklace", "black-tassel-pendant-necklace.jpg"],
   ["Double Chain Heart Necklace", "double-chain-heart-necklace.jpg"],
-  ["Crystal Solitaire Necklace", "crystal-solitaire-necklace.jpg"],
-  ["Crystal Drop Necklace", "crystal-drop-necklace.jpg"],
+  ["Crystal Solitaire Necklace", "crystal-solitaire-necklace.jpg", { price: 15 }],
+  ["Crystal Drop Necklace", "crystal-drop-necklace.jpg", { price: 15 }],
   ["Crystal Flower Pendant Necklace", "crystal-flower-pendant-necklace.jpg"],
   ["Gold Flower Pendant Necklace", "gold-flower-pendant-necklace.jpg"],
-  ["Heart Outline Pendant Necklace", "heart-outline-pendant-necklace.jpg"],
+  ["Heart Outline Pendant Necklace", "heart-outline-pendant-necklace.jpg", { price: 8 }],
+  ["Gold Heart Pendant Necklace", "gold-heart-pendant-necklace.jpg"],
   ["Crystal Bar Pendant Necklace", "crystal-bar-pendant-necklace.jpg"],
   ["Crystal Charm Drop Necklace", "crystal-charm-drop-necklace.jpg"],
   ["Crystal Heart Pendant Necklace", "crystal-heart-pendant-necklace.jpg"],
@@ -1229,17 +1281,18 @@ addProducts({
   note:"Comes in a SH Branding Store gift pouch.",
   details:["Black and silver finish","Available in ring sizes 8-12","SH Branding Store gift pouch"]
 }, [
-  ["Black Silver Groove Ring", "black-silver-groove-ring.jpg"],
-  ["Triple Line Steel Ring", "triple-line-steel-ring.jpg"],
-  ["Black Twist Pattern Ring", "black-twist-pattern-ring.jpg"],
-  ["Black Diagonal Carbon Ring", "black-diagonal-carbon-ring.jpg"],
-  ["Silver Stripe Black Ring", "silver-stripe-black-ring.jpg"],
-  ["Silver Diagonal Slash Ring", "silver-diagonal-slash-ring.jpg"],
-  ["Black Silver Line Ring", "black-silver-line-ring.jpg"],
-  ["Brushed Silver Black Ring", "brushed-silver-black-ring.jpg"],
-  ["Black Textured Ring", "black-textured-ring.jpg"],
-  ["Black Woven Ring", "black-woven-ring.jpg"],
-  ["Multi Line Black Silver Ring", "multi-line-black-silver-ring.jpg"]
+  ["Black Silver Groove Ring", "black-silver-groove-ring.jpg", { sizes: ["18","19"]}],
+  ["Triple Line Steel Ring", "triple-line-steel-ring.jpg", { sizes: ["17","18"]}],
+  ["Black Twist Pattern Ring", "black-twist-pattern-ring.jpg", { sizes: ["18","19","20"]}],
+  ["Black Diagonal Carbon Ring", "black-diagonal-carbon-ring.jpg", { sizes: ["19"]}],
+  ["Silver Stripe Black Ring", "silver-stripe-black-ring.jpg", { sizes: ["18","19"]}],
+  ["Silver Diagonal Slash Ring", "silver-diagonal-slash-ring.jpg", { sizes: ["19"]}],
+  ["Black Silver Line Ring", "black-silver-line-ring.jpg", { sizes: ["19","20"]}],
+  ["Brushed Silver Black Ring", "brushed-silver-black-ring.jpg", { sizes: ["17","18"]}],
+  ["Black Textured Ring", "black-textured-ring.jpg", { sizes: ["18","19"]}],
+  ["Black Woven Ring", "black-woven-ring.jpg", { sizes: ["17","18","19","20","21"]}],
+  ["Multi Line Black Silver Ring", "multi-line-black-silver-ring.jpg", { sizes: ["17","18","19","20"]}]
+  
 ]);
 
 
@@ -1251,7 +1304,7 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Pave Link Hinged Bangle", "pave-link-hinged-bangle.jpg"],
   ["Triple Line Two-Tone Cuff Bangle", "triple-line-two-tone-cuff-bangle.jpg"],
@@ -1288,7 +1341,7 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Emerald Double Band Bangle", "emerald-double-band-bangle.jpg"],
   ["Crystal Octagon Hinged Bangle", "crystal-octagon-hinged-bangle.jpg"],
@@ -1313,12 +1366,19 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Green Oval Chain and Earrings set", "Green Oval Chain and earring set.jpg"],
   ["lavender white tulip chain and earring set", "lavender white tulip chain and earring set.jpg"],
   ["pink round chain and earring set ", "pink round chain and earring set .jpg"],
   ["white Tulip Chain and Earring Set", "white tulip chain and earring set.jpg"],
+  ["Amara Chain Bangle Set", "Amara Chain Bangle Set.jpg"],
+  ["Avery Link Bangle Set", "Avery Link Bangle Set.jpg"],
+  ["Celeste Star Bangle Set", "Celeste Star Bangle Set.jpg"],
+  ["Elara Geo Bangle Set", "Elara Geo Bangle Set.jpg"],
+  ["Serena Wave Bangle Set", "Serena Wave Bangle Set.jpg"],
+  ["Luna Wave Bangle Set", "Luna Wave Bangle Set.jpg"],
+
   ]);
 
 
@@ -1330,7 +1390,7 @@ addProducts({
   sizes:["One Size"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
-  details:["Gold-tone finish","One size","SH Branding Store gift pouch"]
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
 }, [
   ["Rolex Green sqaure Dial", "1.jpg"],
   ["Gucci Round Green Dial", "2.jpg"],
@@ -1338,11 +1398,34 @@ addProducts({
   ["Rolex White Square Dail", "4.jpg"],
   ]);
 
+
+/* ---------- ANKLETS – 390 AED (12 pieces) ---------- */
+addProducts({
+  category:"jewellery", subcategory:"anklets",
+  folder:"images/jewellery/anklets/",
+  price:30, stock:1,
+  sizes:["One Size"],
+  style:"gold-tone",
+  note:"Comes in a SH Branding Store gift pouch.",
+  details:["Gold plated,Anti-Tarnished and Stainless steel","SH Branding Store gift pouch"]
+}, [
+  ["Cherry charm Anklet", "Cherry charm Anklet.jpg"],
+  ["Double layer Drop Anklet", "Double layer Drop Anklet.jpg"],
+  ["Dainty round Charm Anklet", "Dainty round Charm Anklet.jpg"],
+  ["Floral Charm Anklet", "Floral Charm Anklet.jpg"],
+  ["Golden star Drop Anklet", "Golden star Drop Anklet.jpg"],
+  ["Mini Star Charm Anklet", "Mini Star Charm Anklet.jpg"],
+  ["Minimal Layered Chain Anklet", "Minimal Layered Chain Anklet.jpg"],
+  ["Pearl Drop Anklet", "Pearl Drop Anklet.jpg"],
+  ["Snake chain Anklet", "Snake chain Anklet.jpg"],
+
+  ]);
+
 /* ---------- Plus Size – 390 AED (12 pieces) ---------- */
 addProducts({
   category:"clothing", subcategory:"plus-size",
   folder:"images/clothing/plus-size/",
-  price:45, stock:1,
+  price:59, stock:1,
   sizes:["4XL","5XL","6XL","7XL"],
   style:"gold-tone",
   note:"Comes in a SH Branding Store gift pouch.",
@@ -1350,6 +1433,8 @@ addProducts({
 }, [
   ["Pink Print Kurta Set", "pink-print-kurta-set.jpg"],
   ["Ivory Print Kurta Set", "ivory-print-kurta-set.jpg"],
+  ["Indigo Floral Kurti Set", "Indigo floral kurti set.jpg"],
+  ["Olive Floral Kurti Set", "Olive floral kurti set.jpg"]
 
   ]);
 
